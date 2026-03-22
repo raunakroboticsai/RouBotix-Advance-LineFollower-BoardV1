@@ -1,0 +1,49 @@
+#define s0 14
+#define s1 15
+#define s2 16
+#define s3 17
+#define AI A4
+
+int digitalv[16];
+
+int threshold = 500;
+
+void setup() {
+  Serial.begin(115200);
+
+  pinMode(s0, OUTPUT);
+  pinMode(s1, OUTPUT);
+  pinMode(s2, OUTPUT);
+  pinMode(s3, OUTPUT);
+}
+
+void loop() {
+
+  long sumap = 0;
+  int suma = 0;
+
+  for (int i = 0; i < 16; i++) {
+
+    selectMux(i);
+    int val = analogRead(AI);
+
+    digitalv[i] = (val < threshold);
+
+    sumap += (1500 - i * 100) * digitalv[i];
+    suma += digitalv[i];
+  }
+
+  int pos = (suma != 0) ? sumap / suma : -1;
+
+  Serial.print("POS: ");
+  Serial.println(pos);
+
+  delay(50);
+}
+
+void selectMux(int i) {
+  digitalWrite(s0, i & 1);
+  digitalWrite(s1, i & 2);
+  digitalWrite(s2, i & 4);
+  digitalWrite(s3, i & 8);
+}
