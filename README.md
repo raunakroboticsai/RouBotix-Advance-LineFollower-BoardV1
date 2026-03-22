@@ -2,7 +2,8 @@
 High-performance line follower robot baseboard integrating motor control, turbine support, and sensor interfacing, designed for competitive robotics applications.
 
 
-<img width="1600" height="900" alt="White Blue Modern Meet The Author Twitter Post (1)" src="https://github.com/user-attachments/assets/e915ef7e-0416-4eb4-b47c-27cea68b1bf7" />
+<img width="1287" height="740" alt="PCB BoardUP" src="https://github.com/user-attachments/assets/9e36d173-a3af-4646-8e1e-ef6921757ea2" />
+
 
 
 # RouBotix Line Follower Board
