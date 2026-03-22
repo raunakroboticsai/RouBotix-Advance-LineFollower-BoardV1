@@ -1,0 +1,55 @@
+#define s0 14
+#define s1 15
+#define s2 16
+#define s3 17
+#define AI A4
+
+int fondo[16];
+int linea[16];
+
+void setup() {
+  Serial.begin(115200);
+
+  pinMode(s0, OUTPUT);
+  pinMode(s1, OUTPUT);
+  pinMode(s2, OUTPUT);
+  pinMode(s3, OUTPUT);
+
+  Serial.println("Place on BACKGROUND and press key");
+  while (!Serial.available());
+  Serial.read();
+
+  for (int k = 0; k < 50; k++) {
+    for (int i = 0; i < 16; i++) {
+      selectMux(i);
+      fondo[i] = analogRead(AI);
+    }
+  }
+
+  Serial.println("Place on LINE and press key");
+  while (!Serial.available());
+  Serial.read();
+
+  for (int k = 0; k < 50; k++) {
+    for (int i = 0; i < 16; i++) {
+      selectMux(i);
+      linea[i] = analogRead(AI);
+    }
+  }
+
+  Serial.println("Thresholds:");
+  for (int i = 0; i < 16; i++) {
+    int th = (fondo[i] + linea[i]) / 2;
+    Serial.print(th);
+    Serial.print(", ");
+  }
+}
+
+void loop() {}
+
+void selectMux(int i) {
+  digitalWrite(s0, i & 1);
+  digitalWrite(s1, i & 2);
+  digitalWrite(s2, i & 4);
+  digitalWrite(s3, i & 8);
+}
