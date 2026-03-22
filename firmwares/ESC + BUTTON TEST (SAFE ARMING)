@@ -1,0 +1,28 @@
+#include <ESC.h>
+
+#define ESC_PIN 10
+#define BUTTON 3
+
+ESC esc(ESC_PIN);
+
+void setup() {
+  pinMode(BUTTON, INPUT_PULLUP);
+
+  esc.init();
+
+  Serial.begin(115200);
+  Serial.println("Press button to ARM ESC");
+
+  while (digitalRead(BUTTON));
+
+  for (int i = 1000; i <= 2000; i++) {
+    esc.setSpeed(i);
+    delay(2);
+  }
+
+  Serial.println("ESC Armed");
+}
+
+void loop() {
+  esc.setSpeed(1600);
+}
