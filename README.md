@@ -120,5 +120,4 @@ Design ensures:
 
 ---
 
-
-## 7. Repository Structure
+by Raunak Choudhary
