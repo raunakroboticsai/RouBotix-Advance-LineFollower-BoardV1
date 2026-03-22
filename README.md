@@ -5,7 +5,7 @@ High-performance line follower robot baseboard integrating motor control, turbin
 <img width="1600" height="900" alt="White Blue Modern Meet The Author Twitter Post (1)" src="https://github.com/user-attachments/assets/e915ef7e-0416-4eb4-b47c-27cea68b1bf7" />
 
 
-# RouBotix Line Follower System
+# RouBotix Line Follower Board
 
 A high-performance, competition-grade line follower robotics platform integrating motor control, turbine propulsion support, and multi-channel sensor interfacing on a single optimized PCB.
 
@@ -13,7 +13,7 @@ A high-performance, competition-grade line follower robotics platform integratin
 
 ## 1. Introduction
 
-The RouBotix Advance Line Follower System is a custom-designed embedded hardware platform developed for high-speed line following robots. The system combines motor driving, sensor interfacing, and power management into a compact and efficient baseboard, reducing wiring complexity and improving real-time performance.
+The RouBotix Advance Line Follower Board is a custom-designed embedded hardware platform developed for high-speed line following robots. The system combines motor driving, sensor interfacing, and power management into a compact and efficient baseboard, reducing wiring complexity and improving real-time performance.
 
 This design is specifically optimized for robotics competitions where precision, speed, and reliability are critical.
 
@@ -24,7 +24,7 @@ This design is specifically optimized for robotics competitions where precision,
 The system consists of two major hardware modules:
 
 - RouBotix Baseboard V1 (Main Control Board)
-- 16 Sensor Array V2 (External Sensor Module)
+- 16 Sensor Array V1 (External Sensor Module)
 
 Together, these modules provide a complete solution for advanced line follower robots.
 
