@@ -1,5 +1,6 @@
 # RouBotix-Advance-LineFollower-BoardV1
-High-performance line follower robot baseboard integrating motor control, turbine support, and sensor interfacing, designed for competitive robotics applications.
+
+**High-performance line follower robot baseboard integrating motor control, turbine support, and sensor interfacing, designed for competitive robotics applications.**
 
 
 <img width="1287" height="740" alt="PCB BoardUP" src="https://github.com/user-attachments/assets/9e36d173-a3af-4646-8e1e-ef6921757ea2" />
@@ -189,68 +190,7 @@ External ESC Interface
 | **Resistors** | Pull-up/Pull-down | Multiple |
 | **Connector** | Interface Header | 1 |
 
----
 
-## 📸 Screenshots & PCB Preview
-
-###  PCB Top View
-
-![PCB Top View](screenshots/pcb_top.png)
-
-###  PCB Bottom View
-
-![PCB Bottom View](screenshots/pcb_bottom.png)
-
-###  Schematic
-
-![Schematic](screenshots/schematic.png)
-
-###  Assembled Robot
-
-![Assembled](screenshots/assembled_robot.png)
-
-###  Competition Run
-
-![Competition](screenshots/competition_run.png)
-
----
-
-##  Project Structure
-
-```
-RouBotix-Line-Follower-Board/
-│
-├── 📁 hardware/
-│   ├── 📁 baseboard_v1/
-│   │   ├── baseboard_v1.sch        # Schematic file
-│   │   ├── baseboard_v1.brd        # PCB layout file
-│   │   └── gerber/                 # Gerber files for manufacturing
-│   │
-│   └── 📁 sensor_array_v1/
-│       ├── sensor_array.sch
-│       ├── sensor_array.brd
-│       └── gerber/
-│
-├── 📁 firmware/
-│   └── 📁 line_follower/
-│       └── line_follower.ino       # Arduino main code
-│
-├── 📁 screenshots/
-│   ├── pcb_top.png
-│   ├── pcb_bottom.png
-│   ├── schematic.png
-│   ├── assembled_robot.png
-│   └── competition_run.png
-│
-├── 📁 docs/
-│   └── RouBotix_Datasheet.pdf      # Full technical datasheet
-│
-├── README.md
-├── LICENSE
-└── .gitignore
-```
-
----
 
 ##  Author
 
